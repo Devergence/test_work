@@ -1,0 +1,11 @@
+.site {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1170px;
+}
+.header {
+  width: 100%;
+}
+.header__top {
+  background-color: #4d4849;
+}
