@@ -1,4 +1,229 @@
+.b-container
+  max-width 1170px
+  margin 0 auto
+  height 100%
+
 .header
   width 100%
+
   &__top
     background-color #4d4849
+    height 50px
+    &-container
+      position relative
+      display flex
+      flex-flow row wrap
+      height 50px
+
+  &__left
+    display flex
+    flex 1 1 50%
+    align-self center
+
+    &-item-first
+      margin-right 45px
+
+  &__right
+    display flex
+    flex 1 1 50%
+    justify-content flex-end
+    &-navigation
+      margin-right 61px
+
+  &__cart
+    position absolute
+    right 0
+    display flex
+    justify-content center
+    align-items center
+    width 45px
+    height 66px
+    background #f6d98f
+    margin-left 20px
+    transition all 0.2s ease-in-out 0s
+    -moz-transition all 0.2s ease-in-out 0s
+    -ms-transition all 0.2s ease-in-out 0s
+    -webkit-transition all 0.2s ease-in-out 0s
+    -o-transition all 0.2s ease-in-out 0s
+    &-link
+      font-size 20px
+      color #4d4849
+      position relative
+      display block
+      line-height 58px
+    &:after
+      content ""
+      position absolute
+      bottom 0
+      left 0
+      width 0
+      left 0
+      border-left 23px solid transparent
+      border-right 22px solid transparent
+      border-bottom 9px solid #fff
+    &:hover
+      padding-top 10px
+      height 76px
+      
+  &__bottom
+    height 122px
+
+    &-container
+      display flex
+      flex-direction row
+
+    &-menu
+      flex 1 1 50%
+      display flex
+      align-items center
+      &-left
+        padding 0 64px
+      &-right
+        padding-left 126px
+  &__center
+    position relative
+    z-index 1
+
+  &__logo
+    position absolute
+    top -50px
+    left 0
+    right 0
+    margin auto
+    width 170px
+    background #c55842
+    &:after
+      position relative
+      content ""
+      display block
+      width 0
+      height 0
+      bottom -24px
+      border-width 0 85px 24px
+      border-style solid
+      border-color #c55842 #c55842 transparent #c55842
+    &-link
+      display inline-block
+      padding 44px 18px 0 18px
+      border-top 7px solid #ac4f3d
+.menu
+  &__top
+    &-item
+      &:hover .item__link
+        background-color #c55842
+        color #fff
+        -webkit-transition all .3s
+        -moz-transition    all .3s
+        transition         all .3s
+    &-list
+      padding 0
+      margin 0
+      list-style none
+      display flex
+  &__bottom
+    &-item
+      position relative
+      padding 29px 37px
+      &:before
+        width 4px
+        height 4px
+        background #bcc1c4
+        right 0
+        top 50%
+        margin-top -2px
+        border-radius 50%
+        content ""
+        position: absolute
+        transition all .3s
+      &:after
+        content ""
+        position: absolute
+        transition all .3s
+        width 36px
+        height 3px
+        background #c55842
+        left: 50%
+        margin-left -18px
+        bottom: 22px
+        transform scale(0)
+      &:hover
+        &:after
+          transform scale(1)
+        .menu__bottom-link
+          color: #c55842
+          transition all .3s
+      &:last-child
+        &:before
+          display none
+
+
+    &-list
+      padding 0
+      margin 11px 0 0 0
+      list-style none
+      display flex
+    &-link
+      font-family 'monseratt-bold'
+      font-size 16px
+      text-transform uppercase
+      color #bcc1c4
+      text-decoration none
+
+      &-active
+        color #c55842
+        &:after
+          content ""
+          position: absolute
+          transition all .3s
+          width 36px
+          height 3px
+          background #c55842
+          left: 50%
+          margin-left -18px
+          bottom: 22px
+
+
+.item
+  font-family 'monseratt-regular'
+  font-size 13px
+  color #918686
+
+  &__link
+    text-decoration none
+    display block
+    padding 18px 20px
+    -webkit-transition all .3s
+    -moz-transition    all .3s
+    transition         all .3s
+
+  &-yellow
+    font-family 'droid_serifitalic'
+    color #f6d98f
+
+
+
+.cart
+  &__logo
+    background url("../images/cart_logo.png") center center no-repeat
+    width 20px
+    height 20px
+    display inline-block
+  &__number
+    font-family 'monseratt-bold'
+    width 14px
+    height 14px
+    line-height 14px
+    text-align center
+    color #fff
+    font-size 9px
+    background #c55842
+    display inline-block
+    right -4px
+    top 7px
+    position absolute
+    -webkit-border-radius 50%
+    -moz-border-radius 50%
+    -ms-border-radius 50%
+    border-radius 50%
+
+

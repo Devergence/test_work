@@ -68,7 +68,9 @@ gulp.task('img', function () {
 
 gulp.task('stylus', function () {
     return gulp.src('app/stylus/styles.styl')
-        .pipe(stylus())
+        .pipe(stylus({
+            'include css': true
+        }))
         .pipe(autoprefixer({
             browsers: ['last 4 versions']
         }))
@@ -80,8 +82,6 @@ gulp.task('scripts', function () {
     return gulp.src([ // Берем все необходимые библиотеки
         './node_modules/jquery/dist/jquery.js',
         'app/js/slick.js',
-        'app/js/mask.js',
-        'app/js/jquery.arcticmodal-0.3.min.js',
         'app/js/app.js'
         
     ])

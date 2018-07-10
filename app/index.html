@@ -11,26 +11,121 @@
 <body class="site">
     <header class="header">
         <div class="header__top">
-            <div class="header__left">
-                <div class="header__left-item">
-                    <p class="item">Language: <span class="">English</span></p>
+            <div class="header__top-container b-container">
+                <div class="header__left">
+                    <div class="header__left-item header__left-item-first">
+                        <p class="item">Language: <span class="item-yellow">English</span></p>
+                    </div>
+                    <div class="header__left-item">
+                        <p class="item">Currency: <span class="item-yellow">$ Dollar</span></p>
+                    </div>
                 </div>
-                <div class="header__left-item">
-
+                <div class="header__right">
+                    <nav class="header__right-navigation">
+                        <ul class="menu__top-list">
+                            <li class="menu__top-item">
+                                <a href="#" class="item__link item">My Account</a>
+                            </li>
+                            <li class="menu__top-item">
+                                <a href="#" class="item__link item">Login/Register</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__cart">
+                    <a href="" class="header__cart-link">
+                        <i class="cart__logo"></i>
+                        <span class="cart__number">1</span>
+                    </a>
                 </div>
             </div>
-            <div class="header__right">
-                <div class="header__right-item">
-
-                </div>
-                <div class="header__right-item">
-
-                </div>
+        </div>
+        <div class="header__center">
+            <div class="header__logo">
+                <a class="header__logo-link" href="/">
+                    <img class="logo" src="images/logo.png" alt="logo">
+                </a>
             </div>
         </div>
         <div class="header__bottom">
-
+            <div class="header__bottom-container b-container">
+                <div class="header__bottom-menu header__bottom-menu-left">
+                    <nav class="header__bottom-navigation">
+                        <ul class="menu__bottom-list">
+                            <li class="menu__bottom-item">
+                                <a href="#" class="menu__bottom-link menu__bottom-link-active">Home</a>
+                            </li>
+                            <li class="menu__bottom-item">
+                                <a href="#" class="menu__bottom-link">Menu</a>
+                            </li>
+                            <li class="menu__bottom-item">
+                                <a href="#" class="menu__bottom-link">Services</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__bottom-menu header__bottom-menu-right">
+                    <nav class="header__bottom-navigation">
+                        <ul class="menu__bottom-list">
+                            <li class="menu__bottom-item">
+                                <a href="#" class="menu__bottom-link">Blog</a>
+                            </li>
+                            <li class="menu__bottom-item">
+                                <a href="#" class="menu__bottom-link">About us</a>
+                            </li>
+                            <li class="menu__bottom-item">
+                                <a href="#" class="menu__bottom-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
+    <section class="slider">
+        <div class="slider__item">
+            <div class="slider__image">
+                <img src="images/home-slider.jpg" alt="slider">
+            </div>
+            <div class="slider__text slider__text-wrapper b-container">
+                <p class="slider__text-top">Messages</p>
+                <p class="slider__text-center">Welcome to Michello</p>
+                <div class="slider__icons">
+                    <img class="slider__icons-center" src="images/cup.png" alt="cup">
+                </div>
+                <p class="slider__text-bottom">
+                    <span class="slider__text-bottom_block">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.</span>
+                    <span class="slider__text-bottom_block">Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.</span>
+                    <span class="slider__text-bottom_block">Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</span></p>
+            </div>
+        </div>
+        <div class="slider__item">
+            <div class="slider__image">
+                <img src="images/home-slider-2.jpg" alt="slider">
+            </div>
+            <div class="slider__text slider__text-wrapper b-container">
+                <p class="slider__text-top">Messages2</p>
+                <p class="slider__text-center">Welcome to Michello2</p>
+                <div class="slider__icons">
+                    <img class="slider__icons-center" src="images/cup.png" alt="cup">
+                </div>
+                <p class="slider__text-bottom">
+                    <span class="slider__text-bottom_block">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.</span>
+                    <span class="slider__text-bottom_block">Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.</span>
+                    <span class="slider__text-bottom_block">Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</span></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/pixel.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $.pixlayout("../images/home.jpg");
+        });
+    </script>
 </body>
 </html>
